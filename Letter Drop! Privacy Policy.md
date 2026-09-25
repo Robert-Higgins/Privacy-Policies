@@ -81,7 +81,7 @@ The Game uses the following third-party services:
 - **Firebase Authentication** creates your online account from your Google Play Games sign-in. It stores a random Firebase user ID and your Google Play Games player ID. The Game does not request your email address from it.
 - **Cloud Firestore** stores your public player profile (Section 2.3), your friend code, your friends list and your pending friend requests. This data is held in Google's data centres in the United States.
 - As with any online service, Google's servers process your IP address and basic technical information in order to deliver the service.
-- The Game does not use Firebase Analytics, Crashlytics or any other Firebase tracking or advertising feature.
+- Analytics and crash reporting. The Game uses Google Analytics for Firebase to understand how the Game is played (for example games started and finished, tutorial progress, and gems earned and spent) and Firebase Crashlytics to report crashes. These collect a device-specific app instance ID, device and app information, and gameplay events; Play Store purchases are recorded automatically. This data is not linked to your name and is kept for up to [2 / 14] months. See Google's policy: https://policies.google.com/technologies/partner-sites
 - Unlike the other services in this section, I control this data: Google stores it on my behalf as a data processor.
 - Firebase privacy information: https://firebase.google.com/support/privacy
 
